@@ -1,5 +1,7 @@
 # importer-worker
 
+> **Moved.** This service now lives in [c88lopez/importer](https://github.com/c88lopez/importer), under `cmd/worker`, together with importer-api. This repo's history was imported there; it's archived and no longer updated.
+
 Processes the events [importer-api](../importer-api) publishes to RabbitMQ. For each `item.created` it marks the item `done` in the shared Postgres database (`status`, `processed_at`).
 
 ```
